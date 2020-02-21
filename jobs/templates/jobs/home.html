@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>homepage</title>
+    <title>Serdar Altuntas</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
@@ -63,16 +63,16 @@
   <body>
     <header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Serdar Altuntas</a>
+  <a class="navbar-brand" href="{% url 'home' %}">Serdar Altuntas</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">Mathematics</a>
-      <a class="nav-item nav-link" href="#">Resume</a>
-      <a class="nav-item nav-link" href="#" tabindex="-1" aria-disabled="true">Blog</a>
+      <a class="nav-item nav-link active" href="{% url 'home' %}">Home</a>
+      <a class="nav-item nav-link" href="https://cms.math.ca/crux/">Mathematics</a>
+      <a class="nav-item nav-link" href="{% static 'Lebenslauf.pdf' %}">Resume</a>
+      <a class="nav-item nav-link" href="blog" tabindex="-1" aria-disabled="true">Blog</a>
     </div>
   </div>
 </nav>
@@ -91,7 +91,7 @@
       <p>
         <a href="mailto:serdaraltuntas@web.de" class="btn btn-primary my-2">e-mail</a>
       </p>
-        <img src="media/image/altuntas.jpg" alt="serdar" width="300" height=auto>
+        <img src="{% static 'serdar.jpg' %}" width="300" height=auto>
     </div>
 <script type="text/tikz">
   \begin{tikzpicture}
